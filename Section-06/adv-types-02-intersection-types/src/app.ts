@@ -22,3 +22,10 @@ type Combinable = string | number;
 type Numeric = number | boolean;
 
 type Universal = Combinable & Numeric;
+
+// Universal == number
+const a: Universal = 12;
+// ERROR
+// const b: Universal = 'AAA';
+// ERROR
+// const c: Universal = true;
